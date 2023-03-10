@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
-export const LocationTag = styled.div`
+export const LocationTag = styled.button`
   color: ${(props) => props.theme["purple-dark"]};
   background-color: ${(props) => props.theme["purple-light"]};
 
   padding: 0.5rem;
-
   font-size: 0.875rem; // 14px
-  line-height: 1;
   border-radius: 0.375rem; // 6px
 
   display: inline-flex;
