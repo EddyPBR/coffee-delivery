@@ -28,6 +28,12 @@ export const GlobalStyle = createGlobalStyle`
   input, textarea, button {
     font-size: 0.875rem;
   }
+
+  button {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+  }
   
   h1, h2, h3, h4, h5, h6, strong {
     font-family: "Baloo 2", cursive;
