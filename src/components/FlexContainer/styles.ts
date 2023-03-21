@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { parseValueToCssUnit } from "../../utils/parseValueToCssUnit";
+
 export interface IContainerProps {
   flexDirection: "row" | "column";
   align: "start" | "end" | "center" | "stretch" | "baseline";
@@ -12,7 +14,7 @@ export interface IContainerProps {
 export const Container = styled.div<IContainerProps>`
   max-width: 70rem; // 1120px
   width: 90vw;
-  height: ${(props) => props.height};
+  height: ${(props) => parseValueToCssUnit(props.height)};
   margin: 0 auto;
 
   display: flex;
@@ -20,4 +22,5 @@ export const Container = styled.div<IContainerProps>`
   justify-content: ${(props) => props.justify};
   flex-wrap: ${(props) => props.wrap};
   align-items: ${(props) => props.align};
+  gap: ${(props) => parseValueToCssUnit(props.gap)};
 `;
