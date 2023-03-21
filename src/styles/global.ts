@@ -34,11 +34,4 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     line-height: 1;
   }
-  
-  h1, h2, h3, h4, h5, h6, strong {
-    font-family: "Baloo 2", cursive;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: ${(props) => props.theme["base-title"]};
-  }
 `;
