@@ -1,8 +1,10 @@
-import { IntroSection, Content, Image } from "./styles";
+import { IntroSection, Content, Image, InfoList } from "./styles";
 import CoffeeDeliveryArtPng from "../../assets/others/coffee-delivery-art.png";
 import { Title } from "../Title";
 import { Text } from "../Text";
 import { FlexContainer } from "../FlexContainer";
+import { Info } from "../Info";
+import { Coffee, Package, ShoppingCart, Timer } from "@phosphor-icons/react";
 
 export function Intro() {
   return (
@@ -18,10 +20,67 @@ export function Intro() {
           <Title htmlAs="h1" size="extra-large">
             Encontre o café perfeito para qualquer hora do dia
           </Title>
+
           <Text htmlAs="h2" size="large" weight="regular">
             Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
             hora
           </Text>
+
+          <InfoList>
+            <li>
+              <Info
+                icon={<ShoppingCart size={16} weight="fill" />}
+                title={
+                  <Text size="medium" weight="regular">
+                    Compra simples e segura
+                  </Text>
+                }
+                backgroundColor="yellow-dark"
+                iconColor="white"
+                iconFill="white"
+              />
+            </li>
+            <li>
+            <Info
+              icon={<Package size={16} weight="fill" />}
+              title={
+                <Text size="medium" weight="regular">
+                  Embalagem mantém o café intacto
+                </Text>
+              }
+              backgroundColor="base-text"
+              iconColor="white"
+              iconFill="white"
+            />
+            </li>
+            <li>
+            <Info
+              icon={<Timer size={16} weight="fill" />}
+              title={
+                <Text size="medium" weight="regular">
+                  Entrega rápida e rastreada
+                </Text>
+              }
+              backgroundColor="yellow"
+              iconColor="white"
+              iconFill="white"
+            />
+            </li>
+            <li>
+            <Info
+              icon={<Coffee size={16} weight="fill" />}
+              title={
+                <Text size="medium" weight="regular">
+                  O café chega fresquinho até você
+                </Text>
+              }
+              backgroundColor="purple"
+              iconColor="white"
+              iconFill="white"
+            />
+            </li>
+          </InfoList>
+          
         </Content>
         <Image
           src={CoffeeDeliveryArtPng}
