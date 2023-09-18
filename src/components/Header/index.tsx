@@ -1,7 +1,5 @@
 import { HeaderContainer } from "./styles";
 
-import CoffeeDeliverySvg from "../../assets/others/coffee-delivery-logo.svg";
-
 import { CartButton } from "../CartButton";
 import { Location } from "../Location";
 import { FlexContainer } from "../FlexContainer";
@@ -11,7 +9,7 @@ export function Header() {
     <HeaderContainer>
       <FlexContainer justify="space-between" align="center">
         <img
-          src={CoffeeDeliverySvg}
+          src="/assets/others/coffee-delivery-logo.svg"
           height={40}
           width={85}
           alt="Coffee delivery logotipo"

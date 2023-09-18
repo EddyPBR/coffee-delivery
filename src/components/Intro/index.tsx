@@ -1,5 +1,4 @@
 import { IntroSection, Content, Image, InfoList } from "./styles";
-import CoffeeDeliveryArtPng from "../../assets/others/coffee-delivery-art.png";
 import { Title } from "../Title";
 import { Text } from "../Text";
 import { FlexContainer } from "../FlexContainer";
@@ -83,7 +82,7 @@ export function Intro() {
           
         </Content>
         <Image
-          src={CoffeeDeliveryArtPng}
+          src="/assets/others/coffee-delivery-art.png"
           height={360}
           width={476}
           alt="Copo de café do Coffee delivery"
