@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
 import { Container, IContainerProps } from "./styles";
 
-export interface IFlexContainerProps extends Partial<IContainerProps> {
+export interface IAppContainerProps extends Partial<IContainerProps> {
   children?: ReactNode;
 }
 
-export function FlexContainer({
+export function AppContainer({
   children,
   align = "start",
   flexDirection = "row",
@@ -13,7 +13,7 @@ export function FlexContainer({
   justify = "start",
   wrap = "wrap",
   height = "100%",
-}: IFlexContainerProps) {
+}: IAppContainerProps) {
   return (
     <Container
       align={align}
