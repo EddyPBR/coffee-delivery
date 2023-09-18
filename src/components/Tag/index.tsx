@@ -1,7 +1,5 @@
 import { TagContent } from "./styles";
 
-import { Text } from "../Text";
-
 export interface ITagProps {
   text: string;
 }
@@ -9,7 +7,7 @@ export interface ITagProps {
 export function Tag({ text }: ITagProps) {
   return (
     <TagContent>
-      <Text htmlAs="span" size="extra-small" weight="bold">{text}</Text>
+      <span>{text}</span>
     </TagContent>
   );
 }
