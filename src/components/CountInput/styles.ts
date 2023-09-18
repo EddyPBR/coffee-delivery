@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-export const InputContainer = styled.div`
+export interface IInputContainerProps {
+  size: "medium" | "large";
+}
+
+export const InputContainer = styled.div<IInputContainerProps>`
   display: flex;
 
   & > input {
     width: 1.5rem;
-    height: 2rem;
+    height: ${(props) => (props.size === "large" ? "2.375rem" : "2rem")};
 
     border: none;
     text-align: center;
@@ -27,7 +31,7 @@ export const InputContainer = styled.div`
 
   & > button {
     width: 1.5rem;
-    height: 2rem;
+    height: ${(props) => (props.size === "large" ? "2.375rem" : "2rem")};
     font-size: 0.875rem;
     color: ${(props) => props.theme["purple"]};
     transition: color ease-in-out .2s;
