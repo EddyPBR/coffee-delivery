@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-type SizeType = "large" | "medium" | "small";
+type SizeType = "large" | "medium" | "small" | "extra-small";
 type WeightType = "bold" | "regular";
 
 export interface IStyledTextProps {
@@ -15,7 +15,9 @@ export function fontSize(size: SizeType) {
     case "medium":
       return "1rem";
     case "small":
-      return "0.75rem";
+      return "0.875rem";
+    case "extra-small":
+      return "0.625rem";
     default:
       return "1rem";
   }
