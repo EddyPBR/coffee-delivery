@@ -1,14 +1,14 @@
 import { IntroSection, Content, Image, InfoList } from "./styles";
 import { Title } from "../Title";
 import { Text } from "../Text";
-import { FlexContainer } from "../FlexContainer";
+import { AppContainer } from "../AppContainer";
 import { Info } from "../Info";
 import { Coffee, Package, ShoppingCart, Timer } from "@phosphor-icons/react";
 
 export function Intro() {
   return (
     <IntroSection>
-      <FlexContainer
+      <AppContainer
         flexDirection="row"
         align="center"
         justify="space-between"
@@ -88,7 +88,7 @@ export function Intro() {
           alt="Copo de café do Coffee delivery"
           title="Copo de café do Coffee delivery"
         />
-      </FlexContainer>
+      </AppContainer>
     </IntroSection>
   );
 }
