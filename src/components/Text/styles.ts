@@ -17,7 +17,7 @@ export function fontSize(size: SizeType) {
     case "small":
       return "0.875rem";
     case "extra-small":
-      return "0.625rem";
+      return "0.75rem";
     default:
       return "1rem";
   }
